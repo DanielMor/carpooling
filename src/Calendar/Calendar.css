@@ -1,0 +1,49 @@
+.Calendar {
+  max-width: 450px;
+  margin: 5px auto;
+  display: flex;
+  box-shadow: 0px 5px 15px 0px rgba(204,204,204,1);
+}
+
+.Calendar-container {
+  flex-grow: 1;
+}
+
+.Calendar-current-date {
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+
+.Calendar-weeks {
+  display: flex;
+  border: 1px solid #aaa;
+  border-top: 0px;
+  height: 35px;
+}
+
+.Calendar-weeks > div {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.Calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, calc(calc(100%/7) - 1px));
+  grid-auto-rows: 40px;
+  grid-gap: 1px;
+}
+
+.Calendar-days > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.Calendar-days > div.is-disabled {
+  opacity: 0.6;
+}
