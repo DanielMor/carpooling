@@ -64,21 +64,26 @@ export default class Calendar extends Component {
     const {
       drivers,
       trips,
-      start,
+      cycles,
     } = this.props;
 
-    if (day >= start) {
-      const diff = day.diff(start, 'days');
+    const cyclesOf = cycles.find(c => {
+      return (day > c.start && c.end === null) || (day > c.start && day < c.end);
+    }); 
+
+    if (cyclesOf && day >= cyclesOf.start) {
+      const diff = day.diff(cyclesOf.start, 'days');
       const trip = trips[day.format('YYYY-MM-DD')];
       const driverOfWeek = Math.floor(diff / 7) % drivers.length;
 
       const colors = {
+        driver: drivers[driverOfWeek],
         day: drivers[driverOfWeek].colors[2],
         week: drivers[driverOfWeek].colors[2],
       }
 
       if (trip) {
-        colors.day = drivers[trip.driverOfDay].colors[2]
+        colors.day = drivers.find(d => d.id === trip.driver).colors[2];
       }
 
       return colors;
@@ -108,7 +113,7 @@ const Day = ({ day, disabled, colors, onClick }) => {
 
   const props = {
     className,
-    onClick: colors ? onClick.bind(null, day) : () => null,
+    onClick: colors ? onClick.bind(null, day, colors.driver) : () => null,
     style: {
       background: getBackground(colors),
     }

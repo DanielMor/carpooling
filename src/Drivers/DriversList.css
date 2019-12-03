@@ -2,12 +2,11 @@
 .DriversList {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
 }
 
 .Driver-photo {
-  width: 50px;
-  height: 50px;
+  width: 56px;
+  height: 56px;
   border: 1.5px solid transparent;
   border-radius: 50%;
   margin: 0 10px;

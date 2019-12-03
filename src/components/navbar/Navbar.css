@@ -1,0 +1,17 @@
+.Navbar {
+  position: relative;
+  display: none;
+}
+
+.Navbar:target {
+  display: block;
+}
+
+.Navbar ul {
+  padding: 0;
+}
+
+.Navbar ul > li {
+  list-style: none;
+  padding: 0;
+}
