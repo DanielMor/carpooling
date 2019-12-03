@@ -1,15 +1,24 @@
 {
-  "main.css": "/carpooling/static/css/main.543c0bd4.chunk.css",
-  "main.js": "/carpooling/static/js/main.e88d118b.chunk.js",
-  "main.js.map": "/carpooling/static/js/main.e88d118b.chunk.js.map",
-  "static/css/1.c0ad7c43.chunk.css": "/carpooling/static/css/1.c0ad7c43.chunk.css",
-  "static/js/1.95562c96.chunk.js": "/carpooling/static/js/1.95562c96.chunk.js",
-  "static/js/1.95562c96.chunk.js.map": "/carpooling/static/js/1.95562c96.chunk.js.map",
-  "runtime~main.js": "/carpooling/static/js/runtime~main.e7ae11ed.js",
-  "runtime~main.js.map": "/carpooling/static/js/runtime~main.e7ae11ed.js.map",
-  "static/css/1.c0ad7c43.chunk.css.map": "/carpooling/static/css/1.c0ad7c43.chunk.css.map",
-  "static/css/main.543c0bd4.chunk.css.map": "/carpooling/static/css/main.543c0bd4.chunk.css.map",
-  "index.html": "/carpooling/index.html",
-  "precache-manifest.445860e404205e4a4c38fd0159d5a197.js": "/carpooling/precache-manifest.445860e404205e4a4c38fd0159d5a197.js",
-  "service-worker.js": "/carpooling/service-worker.js"
+  "files": {
+    "main.css": "/carpooling/static/css/main.6613f821.chunk.css",
+    "main.js": "/carpooling/static/js/main.c04ed254.chunk.js",
+    "main.js.map": "/carpooling/static/js/main.c04ed254.chunk.js.map",
+    "runtime-main.js": "/carpooling/static/js/runtime-main.7ccb42e5.js",
+    "runtime-main.js.map": "/carpooling/static/js/runtime-main.7ccb42e5.js.map",
+    "static/css/2.3e5da724.chunk.css": "/carpooling/static/css/2.3e5da724.chunk.css",
+    "static/js/2.0dd57ce2.chunk.js": "/carpooling/static/js/2.0dd57ce2.chunk.js",
+    "static/js/2.0dd57ce2.chunk.js.map": "/carpooling/static/js/2.0dd57ce2.chunk.js.map",
+    "index.html": "/carpooling/index.html",
+    "precache-manifest.0250688ea16b5358feee67e783b71b9b.js": "/carpooling/precache-manifest.0250688ea16b5358feee67e783b71b9b.js",
+    "service-worker.js": "/carpooling/service-worker.js",
+    "static/css/2.3e5da724.chunk.css.map": "/carpooling/static/css/2.3e5da724.chunk.css.map",
+    "static/css/main.6613f821.chunk.css.map": "/carpooling/static/css/main.6613f821.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ccb42e5.js",
+    "static/css/2.3e5da724.chunk.css",
+    "static/js/2.0dd57ce2.chunk.js",
+    "static/css/main.6613f821.chunk.css",
+    "static/js/main.c04ed254.chunk.js"
+  ]
 }
